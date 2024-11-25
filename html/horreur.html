@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://cdn.tailwindcss.com"></script><!--link tailwind-->
+   <link href="../path/to/src/pagedone.css" rel="stylesheet"/><!--link carrousel-->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--link aos-->
+   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <link rel="stylesheet" href="../css/horreur.css"> <!--link css-->
+
+   <title>Cinéflix</title> <!--titre-->
+   <link rel="shortcut icon" href="../img/logo_cineflix.png" type="image/x-icon"> <!--favicon-->
+   <link rel="preconnect" href="https://fonts.googleapis.com"><!--google font-->
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--google font-->
+   <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet"><!--google font-->
+
+
+</head>
+<body>
+<main>
+<div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+   <div class="absolute inset-0">
+      <img src="../img/foret-hantee.jpg" alt="image de fond" class="object-cover object-center w-full h-full" />
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+   </div>
+
+   <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+      <h1 class="text-9xl font-bold leading-tight mb-4 text-white titrehorreur">FILMS D'HORREUR</h1>
+      <p class="text-xl text-gray-300 mb-8 text-white">Le meilleur de l'horreur a vos faire frissonner</p>
+      <a href="#abonnements" class="bg-blue-800 text-white hover:bg-blue-700 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">je m'abonne</a>
+   </div>
+</div>
+   <!--section presentation de films-->
+   <section class="fonce">
+      <div>
+         <div class="blanc gauche">
+            <img src="../img/it-follows.jpg" alt="affiche it follows" class="affichehorreur">
+            <p>
+               <strong class="titrefilms">
+               It Follows
+               <br>
+               <br>
+               2014
+               <br>
+               <br>
+               </strong>
+               Après une rencontre intime, Jay se retrouve poursuivie par une force surnaturelle qui prend la forme de différentes personnes. La seule façon de s’en débarrasser est de transmettre la malédiction à quelqu’un d’autre. Mais la créature, lente et implacable, ne s’arrête jamais. Entre suspense et horreur psychologique, Jay et ses amis doivent trouver un moyen de briser ce cycle infernal.
+            </p>
+         </div>
+         <div class="blanc droite">
+            <p>
+               <strong class="titrefilms">
+               Smile 2
+               <br>
+               <br>
+               2024
+               <br>
+               <br>
+               </strong>
+               Après les événements terrifiants de Smile, une nouvelle victime se retrouve confrontée à l’entité maléfique qui se nourrit des traumatismes et pousse ses victimes à la folie. Alors que les morts mystérieuses s'accumulent, les protagonistes doivent plonger dans les origines de la malédiction pour espérer y échapper avant qu’il ne soit trop tard.
+            </p>
+            <img src="../img/smile-2.jpg" alt="affiche smile 2" class="affichehorreur">
+         </div>
+         <div class="blanc gauche">
+            <img src="../img/ca.jpg" alt="affiche ca" class="affichehorreur">
+            <p>
+               <strong class="titrefilms">
+                  Ca
+                  <br>
+                  <br>
+                  2017
+                  <br>
+                  <br>
+               </strong>
+               Dans la petite ville de Derry, un groupe d’enfants surnommé le Club des Ratés affronte Pennywise, un clown démoniaque qui émerge tous les 27 ans pour se nourrir de la peur des enfants. Alternant entre les épreuves de leur enfance et les retrouvailles à l’âge adulte, ils doivent affronter leurs pires cauchemars pour mettre un terme définitif à ce cycle de terreur.
+            </p>
+         </div>
+      </div>
+   </section> <!--fin section presentation de films-->
+   <!--section forfaits-->
+   <section id="abonnements">
+      <div>
+         <h2 class="titreabonnement">S'ABONNER</h2>
+         <div>
+            <div class="sm:flex sm:flex-col sm:align-center p-10">
+               <div
+                   class="mt-12 space-y-3 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3 ">
+                  <div class="border border-white border-4 rounded-lg shadow-sm divide-y divide-white bleu">
+                     <div class="p-6 ">
+                        <h2 class="text-xl leading-6 font-bold text-white">Essentiel</h2>
+                        <p class="mt-2 text-base text-white leading-tight">Lancez vous dans le monde du cinéma avec CINEFLIX</p>
+                        <p class="mt-8">
+                           <span class="text-4xl font-bold text-white tracking-tighter">5€</span>
+
+                           <span class="text-base font-medium text-white">/mois</span>
+                        </p><a href="/sign-up"
+                               class="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center">CHOISIR ESSENTIEL</a>
+                     </div>
+                     <div class="pt-6 pb-8 px-6 ">
+                        <h3 class="text-sm font-bold text-white tracking-wide uppercase">L'ABONNEMENT INCLUT</h3>
+                        <ul role="list" class="mt-4 space-y-3">
+                           <li class="flex space-x-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
+                                   height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                 <path d="M5 12l5 5l10 -10"></path>
+                              </svg>
+                              <span class="text-base text-white">Accès limité</span>
+                           </li>
+                           <li class="flex space-x-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
+                                   height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                 <path d="M5 12l5 5l10 -10"></path>
+                              </svg>
+                              <span class="text-base text-white">qualité HD</span>
+                           </li>
+                           <li class="flex space-x-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
+                                   height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                 <path d="M5 12l5 5l10 -10"></path>
+                              </svg>
+                              <span class="text-base text-white">Mode Hors-Ligne</span>
+                           </li>
+                           <li class="flex space-x-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
+                                   height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                 <path d="M5 12l5 5l10 -10"></path>
+                              </svg>
+                              <span class="text-base text-white">Recommandations Personnalisées</span>
+                           </li>
+                           <li class="flex space-x-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
+                                   height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                 <path d="M5 12l5 5l10 -10"></path>
+                              </svg>
+                              <span class="text-base text-white">Aucun Engagement</span>
+                           </li>
+                           <li class="flex space-x-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
+                                   height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                 <path d="M5 12l5 5l10 -10"></path>
+                              </svg>
+                              <span class="text-base text-white">Aucune Pub</span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="border border-white border-4 rounded-lg shadow-sm divide-y divide-white bleu">
+                     <div class="p-6 ">
+                        <h2 class="text-xl leading-6 font-bold text-white">Standard</h2>
+                        <p class="mt-2 text-base text-white leading-tight">vivez l'experience CINEFLIX au meilleur prix</p>
+                        <p class="mt-8">
+                           <span class="text-4xl font-bold text-white tracking-tighter">10€</span>
+
+                           <span class="text-base font-medium text-white">/mois</span>
+                        </p><a href="/sign-up"
+                               class="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center">CHOISIR STANDARD</a>
+                     </div>
+                     <div class="pt-6 pb-8 px-6 ">
+                        <h3 class="text-sm font-bold text-white tracking-wide uppercase">L'ABONNEMENT INCLUT</h3>
+                        <ul role="list" class="mt-4 space-y-3">
+                           <li class="flex space-x-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
+                                   height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                 <path d="M5 12l5 5l10 -10"></path>
+                              </svg>
+                              <span class="text-base text-white">Toutes les foncionalités précédentes</span>
+                           </li>
+                           <li class="flex space-x-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
+                                   height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                 <path d="M5 12l5 5l10 -10"></path>
+                              </svg>
+                              <span class="text-base text-white">Catalogue étendu</span>
+                           </li>
+                           <li class="flex space-x-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
+                                   height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                 <path d="M5 12l5 5l10 -10"></path>
+                              </svg>
+                              <span class="text-base text-white">Qualité Full HD</span>
+                           </li>
+                           <li class="flex space-x-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
+                                   height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                 <path d="M5 12l5 5l10 -10"></path>
+                              </svg>
+                              <span class="text-base text-white">2 écrans simultanés</span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="border border-white border-4 rounded-lg shadow-sm divide-y divide-white bleu">
+                     <div class="p-6 ">
+                        <h2 class="text-xl leading-6 font-bold text-white">Premium</h2>
+                        <p class="mt-2 text-base text-white leading-tight">Profitez de CINEFLIX sans aucune limite</p>
+                        <p class="mt-8">
+                           <span class="text-4xl font-bold text-white tracking-tighter">15€</span>
+
+                           <span class="text-base font-medium text-white ">/mois</span>
+                        </p><a href="/sign-up"
+                               class="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center">CHOISIR PREMIUM</a>
+                     </div>
+                     <div>
+                     <div class="pt-6 pb-8 px-6 ">
+                        <h3 class="text-sm font-bold text-white tracking-wide uppercase">L'ABONNEMENT INCLUT</h3>
+                        <ul role="list" class="mt-4 space-y-3 ">
+                           <li class="flex space-x-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
+                                   height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                 <path d="M5 12l5 5l10 -10"></path>
+                              </svg>
+                              <span class="text-base text-white">Toutes les autres fonctionalités</span>
+                           </li>
+                           <li class="flex space-x-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
+                                   height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                 <path d="M5 12l5 5l10 -10"></path>
+                              </svg>
+                              <span class="text-base text-white">Qualité 4k FULL HD TOUT SHYNÉ</span>
+                           </li>
+                           <li class="flex space-x-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
+                                   height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                 <path d="M5 12l5 5l10 -10"></path>
+                              </svg>
+                              <span class="text-base text-white">jusqu'a 4 écrans simultanés</span>
+                           </li>
+                        </ul>
+                     </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </section> <!--fin section forfaits-->
+   <!--section avis-->
+   <section id="avis">
+      <div class="titreavis">
+         <h2>Vos Avis Nous Interessent</h2>
+      </div>
+      <div class="w-full relative">
+         <div class="swiper multiple-slide-carousel swiper-container relative">
+            <div class="swiper-wrapper mb-16">
+               <div class="swiper-slide">
+                  <div class="bg-blue-900 rounded-2xl h-96 flex flex-col justify-center items-center">
+                     <img src="../img/saw.jpg" alt="photo de profil" class="mb-1 pfp">
+                     <p class="text-white mb-20 nomavis">Saw </p>
+                     <p class="text-white">Super contenu et interface intuitive, Cineflix est devenu mon site de streaming préféré !</p>
+                  </div>
+
+               </div>
+               <div class="swiper-slide">
+                  <div class="bg-blue-900 rounded-2xl h-96 flex flex-col justify-center items-center">
+                     <img src="../img/jason.jpg" alt="photo de profil" class="mb-1 pfp">
+                     <p class="text-white mb-20 nomavis">Jason</p>
+                     <p class="text-white">Large choix de films et séries, qualité au top ! Je recommande Cineflix.</p>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="bg-blue-900 rounded-2xl h-96 flex flex-col justify-center items-center">
+                     <img src="../img/myers.jpg" alt="photo de profil" class="mb-1 pfp">
+                     <p class="text-white mb-20 nomavis">Michael Myers</p>
+                     <p class="text-white">Cineflix, c’est la plateforme idéale pour les cinéphiles ! Tout ce que j'aime en un clic.</p>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="bg-blue-900 rounded-2xl h-96 flex flex-col justify-center items-center">
+                     <img src="../img/nonne.jpg" alt="photo de profil" class="mb-1 pfp">
+                     <p class="text-white mb-20 nomavis">La Nonne</p>
+                     <p class="text-white">Service rapide, catalogue varié, et zéro bug : Cineflix est impeccable.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="categories">
+      <div>
+         <div class="titreavis">
+            <h2>vous souhaitez decouvrir un nouveau genre?</h2>
+         </div>
+         <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+               <div class="bg-white p-4 rounded-lg shadow-lg h-[30vh] flex flex-col justify-between sciences">
+                  <h2 class="text-xl font-bold text-left md:text-left text-center">Science Fiction</h2>
+                  <p class="text-left md:text-left text-center">Explorez des mondes futuristes et des technologies avancées.</p>
+                  <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded">Découvrir</button>
+               </div>
+               <div class="bg-white p-4 rounded-lg shadow-lg h-[30vh] flex flex-col justify-between romance">
+                  <h2 class="text-xl font-bold text-left md:text-left text-center">Romance</h2>
+                  <p class="text-left md:text-left text-center">Des histoires d'amour passionnantes et émouvantes.</p>
+                  <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded">Découvrir</button>
+               </div>
+               <div class="bg-white p-4 rounded-lg shadow-lg h-[30vh] flex flex-col justify-between action">
+                  <h2 class="text-xl font-bold text-left md:text-left text-center">Action</h2>
+                  <p class="text-left md:text-left text-center">Des aventures palpitantes et des scènes d'action intenses.</p>
+                  <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded">Découvrir</button>
+               </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+               <div class="bg-white p-4 rounded-lg shadow-lg h-[30vh] flex flex-col justify-between col-span-2 md:col-span-1 comedie">
+                  <h2 class="text-xl font-bold text-left md:text-left text-center">Comédie</h2>
+                  <p class="text-left md:text-left text-center">Des rires garantis avec des situations hilarantes.</p>
+                  <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded">Découvrir</button>
+               </div>
+               <div class="bg-white p-4 rounded-lg shadow-lg h-[30vh] flex flex-col justify-between col-span-2 md:col-span-1 anime">
+                  <h2 class="text-xl font-bold text-left md:text-left text-center">Anime</h2>
+                  <p class="text-left md:text-left text-center">Des récits captivants animés avec des visuels époustouflants.</p>
+                  <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded">Découvrir</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section>
+      <div>
+         <h2>decouvrir plus</h2>
+      </div>
+      <div>
+         <p>vous souhaitez plonger dans vos films d'horreur préférés?
+         alors decouvrez vite paranormal district</p>
+      </div>
+   </section>
+
+</main>
+
+
+
+
+<script src="https://kit.fontawesome.com/3fb473981b.js" crossorigin="anonymous"></script><!--script icon-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> <!--script bootstrap-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--script aos-->
+<script>
+    AOS.init();
+</script> <!-- init aos-->
+<script>
+   var swiper = new Swiper(".multiple-slide-carousel", {
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 20,
+      autoplay: {
+         delay: 0,
+         disableOnInteraction: false,
+      },
+      speed:10000,
+      navigation: {
+         nextEl: ".multiple-slide-carousel .swiper-button-next",
+         prevEl: ".multiple-slide-carousel .swiper-button-prev",
+      },
+      breakpoints: {
+         1920: {
+            slidesPerView: 3,
+            spaceBetween: 30
+         },
+         1028: {
+            slidesPerView: 2,
+            spaceBetween: 30
+         },
+         990: {
+            slidesPerView: 1,
+            spaceBetween: 0
+         }
+      }
+
+   });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+.road-rage-regular {
+    font-family: "Road Rage", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.titrehorreur{
+    font-family: "Road Rage", sans-serif;
+}
+.affichehorreur{
+    width: 17vw;
+    height: auto;
+}
+/* Styles de base */
+.fonce {
+    background-image: url("../img/fond-bleu-fonce.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.blanc {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 5vh 5vw;
+    padding: 2vh 10vw;
+    gap: 15vw; /* Espacement entre image et texte */
+}
+
+.gauche img {
+    order: 0;
+    flex-shrink: 0;
+    width: 40%; /* Par défaut, l'image occupe 40% */
+}
+
+.gauche p {
+    order: 1;
+    text-align: left;
+    font-size: 1.2vw; /* Texte adaptatif pour écrans larges */
+    line-height: 1.5;
+}
+
+.droite img {
+    order: 1;
+    flex-shrink: 0;
+    width: 40%; /* Par défaut, l'image occupe 40% */
+}
+
+.droite p {
+    order: 0;
+    text-align: left;
+    font-size: 1.2vw; /* Texte adaptatif pour écrans larges */
+    line-height: 1.5;
+}
+
+/* Titres dans <strong> */
+.titrefilms {
+    font-size: 1.5vw; /* Plus grand que le texte normal */
+    line-height: 1.2;
+    font-weight: bold;
+}
+.titreabonnement{
+    font-size: 7vw;
+    text-align: center;
+    padding-top: 4vh;
+    color: white;
+    font-family: "Road Rage", sans-serif;
+}
+
+#abonnements{
+    background-image: url("../img/bg-achat.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.bleu{
+    background-color: #000040;
+    border-radius: 8px;
+}
+.swiper-wrapper {
+    width: 100%;
+    height: max-content !important;
+    padding-bottom: 64px !important;
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+}
+.swiper-pagination-bullet {
+    background: #000040;
+}
+.pfp{
+    width: 6vw;
+    border-radius: 50px;
+}
+.nomavis{
+    font-weight: bold;
+}
+.titreavis{
+    font-size: 7vw;
+    text-align: center;
+    padding-top: 4vh;
+    padding-bottom: 10vh;
+    color: white;
+    font-family: "Road Rage", sans-serif;
+}
+#avis{
+    background-image: url("../img/black-phone.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+#categories{
+    background-color: #000040;
+}
+.romance{
+    background-image: url("../img/titanic.jpg");
+    background-position: top;
+}
+.sciences{
+    background-image: url("../img/dune.jpg");
+    background-position: center;
+}
+.action{
+    background-image: url("../img/avengers.jpg");
+    background-position: center;
+}
+/* Responsive : Tablettes (768px - 1023px) */
+@media (max-width: 1024px) {
+    .blanc {
+        gap: 10vw; /* Réduit l'écart entre image et texte */
+    }
+
+    .gauche img,
+    .droite img {
+        width: 40%; /* Image reste à 40% */
+    }
+
+    .gauche p,
+    .droite p {
+        font-size: 1.5vw; /* Texte légèrement agrandi */
+    }
+
+    .titrefilms {
+        font-size: 1.8vw; /* Titre un peu plus grand */
+    }
+}
+
+/* Responsive : Mobiles (425px - 767px) */
+@media (max-width: 767px) {
+    .blanc {
+        flex-direction: column; /* Texte en dessous de l'image */
+        gap: 2vh;
+        padding: 2vh 5vw;
+        text-align: center; /* Centrer le contenu */
+    }
+
+    .gauche img,
+    .droite img {
+        width: 100%; /* Image pleine largeur */
+    }
+
+    .gauche p,
+    .droite p {
+        font-size: 4vw; /* Texte adaptatif pour petits écrans */
+        text-align: center;
+        order: 2/* Texte centré */
+    }
+
+    .titrefilms {
+        font-size: 5vw; /* Titre plus grand et adaptatif */
+    }
+}
