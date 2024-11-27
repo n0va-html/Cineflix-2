@@ -1,0 +1,66 @@
+body{
+    background-color: #393939;
+    color:white;
+}
+
+.numerotrois{
+    background-color: #b00000;
+}
+
+
+
+.numerodeux{
+    padding-top: 50px;
+}
+
+.numeroquatre .col{
+    text-align: left;
+}
+
+.paragraphe{
+    text-align: left;
+    padding-top: 50px;
+
+}
+
+.paragraphes{
+    text-align: left;
+}
+
+ .numerocinq{
+background-color: #b00000;
+}
+
+.numerocinq img{
+    padding-top: 60px;
+}
+
+.intro {
+    background-image: url("image/intro.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+
+}
+
+.intro h1 {
+    color: #b00000;
+    margin-bottom: 100px;
+    padding-top: 20px;
+}
+
+
+
+
+.imageun{
+    width: 100%;
+}
+
+p {
+    font-size: 25px;
+}
+
+#picto,#textun{
+    font-size: 25px;
+}
