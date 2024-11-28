@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineflix - Découvrez l'Excellence du Cinéma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pageanime.css">
+    <meta name="title" content="Cineflix | Les Meilleures Comédies à Regarder en Ligne">
+    <meta name="description" content="Riez sans limite avec Cineflix ! Découvrez notre sélection des meilleures comédies : films hilarants, stand-up et classiques incontournables. Rejoignez-nous maintenant pour un accès illimité.">
+    <meta name="keywords" content="comédies, films comiques, films drôles, streaming, Cineflix, comédies françaises, stand-up, abonnement streaming, meilleurs films">
+    <meta name="author" content="Cineflix">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph pour le partage sur les réseaux sociaux -->
+    <meta property="og:title" content="Cineflix | Les Meilleures Comédies à Regarder en Ligne">
+    <meta property="og:description" content="Riez sans limite avec Cineflix ! Découvrez notre sélection des meilleures comédies et profitez de moments hilarants. Abonnez-vous maintenant.">
+    <meta property="og:image" content="URL_DE_L_IMAGE_DE_PARTAGE">
+    <meta property="og:url" content="URL_DE_VOTRE_PAGE_COMEDIE">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card pour le partage sur Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cineflix | Les Meilleures Comédies à Regarder en Ligne">
+    <meta name="twitter:description" content="Explorez les meilleures comédies sur Cineflix. Des films hilarants et un catalogue pour tous les goûts. Essayez gratuitement !">
+    <meta name="twitter:image" content="URL_DE_L_IMAGE_DE_PARTAGE">
+    <title>Comédies - Cineflix</title>
+    <style>
+        .logo {
+            height: 50px;
+            width: auto;
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="image/logocineflix.png" alt="Logo Cineflix" class="logo me-2">
+            </a>
+            <!-- Bouton de menu pour les écrans réduits -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Liens de navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pagesommaire.html">Sommaire</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Genres
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Romance</a></li>
+                            <li><a class="dropdown-item" href="#">Science-Fiction</a></li>
+                            <li><a class="dropdown-item" href="#">Horreur</a></li>
+                            <li><a class="dropdown-item" href="pageanime.html">Animé</a></li>
+                            <li><a class="dropdown-item" href="#">Comédies</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+                <!-- Bouton S'abonner -->
+                <a href="#abo" class="btn btn-primary ms-3">S'abonner</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Exemple de contenu pour tester la navigation -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+    
+   
+</head>
+<body>
+    <!-- Hero Section -->
+    <header>
+        <div class="container text-center hero">
+            <h1>Bienvenue sur Cineflix</h1>
+            <p>Découvrez des milliers de films et séries, directement chez vous.</p>
+            <a href="#abo" class="btn btn-primary">S'abonner</a>
+        </div>
+    </header>
+
+    <!-- Carousel -->
+    <section class="carousel-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Animé à Ne Pas Manquer</h2>
+            <div id="carouselFilms" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/jjk.jpg" class="d-block w-100" alt="Action Movie">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Jujutsu Kaisen</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/demonslayer.jpg" class="d-block w-100" alt="Romantic Movie">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Demon Slayer</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/onepiece.jpg" class="d-block w-100" alt="Sci-Fi Movie">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>One piece</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="image/naruto.jpg" class="d-block w-100" alt="Sci-Fi Movie">
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5>Naruto</h5>
+                      </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFilms" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselFilms" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                </button>
+            </div>
+            <a id="abo" href=""></a>
+        </div>
+    </section >
+    
+    <!-- Subscription Section -->
+    <section  class="subscriptions py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Nos Offres d'Abonnement</h2>
+            <div class="row">
+                <div class="col-md-4 sub">
+                    <div class="card p-3">
+                        <h5 class="card-title">Essentiel</h5>
+                        <p>Accès limité au catalogue, qualité HD.</p>
+                        <h6>€7.99 / mois</h6>
+                        <a href="#" class="btn btn-primary mt-3">S'abonner</a>
+                    </div>
+                </div>
+                <div class="col-md-4 sub ">
+                    <div class="card p-3">
+                        <h5 class="card-title">Standard</h5>
+                        <p>Catalogue étendu, Full HD, 2 écrans simultanés.</p>
+                        <h6>€12.99 / mois</h6>
+                        <a href="#" class="btn btn-primary mt-3">S'abonner</a>
+                    </div>
+                </div>
+                <div class="col-md-4 sub">
+                    <div class="card p-3">
+                        <h5 class="card-title">Premium</h5>
+                        <p>Catalogue complet, 4K, 4 écrans simultanés.</p>
+                        <h6>€19.99 / mois</h6>
+                        <a href="#" class="btn btn-primary mt-3">S'abonner</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Avis de Nos Clients</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="testimonial">
+                        "Cineflix offre une excellente qualité de contenu, je ne pourrais plus m'en passer !"
+                        <footer class="testimonial-author">- Sarah M.</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="testimonial">
+                        "Des films récents et une plateforme facile à utiliser, je recommande !"
+                        <footer class="testimonial-author">- Lucas R.</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="testimonial">
+                        "Une qualité 4K incroyable et des abonnements abordables. Bravo Cineflix !"
+                        <footer class="testimonial-author">- Emma T.</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-900 text-yellow-100 py-12">
+        <div class="container mx-auto px-4">
+            <!-- Footer: Navigation Links en ligne -->
+            <div class="flex flex-wrap justify-between items-center space-x-12 foot">
+                <!-- À propos -->
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold text-yellow-400 mb-4 ">Pages Pricipales</h3>
+                    <ul>
+                        <li><a href="#" class="hover:text-yellow-400">Action</a></li>
+                        <li><a href="#com" class="hover:text-yellow-400">Comedies</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Romance</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Science-Fiction</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Horreur</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div class="flex-1 ">
+                    <h3 id="footer" class="text-xl font-semibold text-yellow-400 mb-4">Contact</h3>
+                    <ul>
+                        <li><a href="https://mail.google.com/mail/u/0/?hl=fr#inbox?compose=CllgCJlHmlTpKZsNvgMNWzfKlkClkTbMfhfKMNphMhgKxWHmNkgkTBfvBVvZqNplKkggjsJQSdV" class="hover:text-yellow-400">Email</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">09 09 09 09 09</a></li>
+                    </ul>
+                </div>
+                <!-- Réseaux sociaux -->
+                <div class="caca">
+                    <h3 class="text-xl font-semibold text-yellow-400 mb-4">Suivez-nous</h3>
+                    <div class="flex space-x-6">
+                        <a href="https://x.com/NeedForSchool1" class="hover:text-yellow-400" target="_blank">
+                            <img src="image/twitter.png" alt="Twitter" class="w-6 h-6"/>
+                        </a>
+                        <a href="https://www.instagram.com/need_forschool/" class="hover:text-yellow-400" target="_blank">
+                            <img src="image/instagram.png" alt="Instagram" class="w-6 h-6"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom: Legal Info -->
+            <div class="mt-12 text-center">
+                <p class="text-yellow-100">
+                    © 2024 Cineflix. Tous droits réservés.
+                    <a href="#" class="text-yellow-400 hover:text-yellow-500">Mentions légales</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>

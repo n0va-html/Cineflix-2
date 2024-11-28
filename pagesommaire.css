@@ -1,0 +1,177 @@
+:root {
+  --primary-color: #f47521; /* Couleur Crunchyroll */
+  --secondary-color: #1a1a1a;
+  --light-color: #f8f8f8;
+  --accent-color: #e94e02;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+header {
+  background: url('https://source.unsplash.com/1600x900/?cinema') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--light-color);
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+header .btn {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+header .btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+}
+
+header .btn-primary:hover {
+  background-color: var(--accent-color);
+}
+
+.categories,
+.featured-films,
+.subscriptions,
+.testimonials,
+.benefits,
+.target-audience {
+  padding: 50px 0;
+}
+
+.category-tile {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* General Footer Styles */
+footer {
+    background-color: #2e2e2e; /* Neutral-900 */
+    color: #f9fafb; /* Yellow-100 */
+    padding-top: 5%;
+    margin-top: 10%;
+}
+
+footer h3 {
+    color: #f47521; /* Yellow-400 */
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #f9fafb; /*Yellow-100 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f47521; /* Yellow-400 */
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.75rem;
+}
+
+/* Footer Flex layout: Align elements horizontally */
+footer .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+footer .flex-1 {
+    flex: 1;
+    min-width: 200px; /* To ensure that on very small screens, each block doesn't become too narrow */
+}
+
+footer .space-x-6 >:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+footer .space-x-6 a:hover {
+    transform: scale(1.1);
+}
+
+/* Legal Info Section */
+footer .mt-12 {
+    margin-top: 3rem;
+}
+
+footer .text-center {
+    text-align: center;
+}
+
+footer .text-yellow-500 {
+    color: #f47521; /* Yellow-500 */
+  }
+  footer{
+      padding-bottom: 1%;
+  }
+  
+.logo{
+  width: 15%;
+}
+.hor{
+  margin-left: 25%;
+}
+@media  (max-width: 768px) {
+    .hor{
+      margin: 0;
+
+    }
+    .cat{
+      padding-left: 2%;
+      padding-right: 2%;
+      height: auto;
+    }
+  
+}

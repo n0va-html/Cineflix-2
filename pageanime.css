@@ -1,0 +1,191 @@
+:root {
+  --primary-color: rgba(241, 7, 147, 0.8); /* Bleu élégant */
+  --secondary-color: rgba(30, 58, 138, 0.8); /* Blanc doux */
+  --accent-color: #0b0a0b; /* Rouge vif */
+  --text-color: #f7ace2; /* Gris foncé */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+header {
+  background: linear-gradient(
+      rgba(241, 7, 147, 0.8),
+      rgba(30, 58, 138, 0.8)
+    ),
+    url('https://source.unsplash.com/1920x1080/?cinema,movies');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #131212;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+header .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #d02a45;
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.card-title {
+  color: var(--accent-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: var(--accent-color);
+}
+
+.testimonial {
+  font-style: italic;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: var(--accent-color);
+}
+.logo{
+  width: 15%;
+}
+@media (max-width: 640px) {
+  .hero{
+    padding: 0;
+  }
+  .sub{
+    padding-top: 5%;
+  }
+}
+footer {
+  background-color: #ef0d8d; /* Neutral-900 */
+  color: #f9fafb; /* Yellow-100 */
+  margin-top: 10%;
+}
+
+footer h3 {
+  color: #0d4ae2; /* Yellow-400 */
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.foot{
+  margin-left: 5%;
+  margin-right: 20%;
+}
+footer a {
+  color: #f9fafb; /*Yellow-100 */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f47521; /* Yellow-400 */
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.75rem;
+}
+
+/* Footer Flex layout: Align elements horizontally */
+footer .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+footer .flex-1 {
+  flex: 1;
+  min-width: 200px; /* To ensure that on very small screens, each block doesn't become too narrow */
+}
+
+footer .space-x-6 >:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+footer .space-x-6 a:hover {
+  transform: scale(1.1);
+}
+
+/* Legal Info Section */
+footer .mt-12 {
+  margin-top: 3rem;
+}
+
+footer .text-center {
+  text-align: center;
+}
+
+footer .text-yellow-500 {
+  color: #f47521; /* Yellow-500 */
+}
+footer{
+    padding-bottom: 1%;
+}
+@media (max-width: 680px) {
+  .caca{
+    margin-left: 35%;
+  }
+  .foot{
+    margin-left: 11%;
+    margin-right: 7%;
+  }
+}
