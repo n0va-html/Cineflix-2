@@ -1,0 +1,465 @@
+.logo{
+  width: 55px;
+}
+.parallax {
+  background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../img/barbie.jpg'); /* Image de fond */
+    background-attachment: fixed; /* Effet parallax */
+    background-position: center 110px;
+    background-size: cover; /* L'image couvre toute la section */
+    z-index: -1; /* L'image reste derrière le contenu */
+  }
+  
+.texteamour{
+  text-align: center;
+  font-size: 20px;
+}
+
+.tuiles .card-body{
+  background-color: #FDE0F6;
+}
+
+.tuiles .img{
+  background-color: #FDE0F6;
+}
+
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrer le texte */
+    text-align: center;
+    color: white;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  /* Section normale pour démonstration */
+  .normal-content {
+    background-color: #f0f0f0;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .normal-content h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Responsivité : ajuster la taille du texte et la hauteur */
+  @media (max-width: 768px) {
+    .content h1 {
+      font-size: 2rem; /* Réduire la taille du titre */
+    }
+  
+    .content p {
+      font-size: 1rem; /* Réduire la taille du texte */
+    }
+  
+    /* Réduire la hauteur des sections parallax pour les petits écrans */
+    .parallax-container {
+      height: 60vh; /* Moins de hauteur pour les petits écrans */
+    }
+  }
+  
+  @media (max-width: 430px) {
+    .content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .content p {
+      font-size: 0.9rem;
+    }
+  
+    /* Réduire davantage la hauteur pour les très petits écrans */
+    .parallax-container {
+      height: 50vh;
+    }
+  }
+
+  p{
+    font-size: 30px;
+  }
+
+  .retro {
+    padding: 20px;
+    font-family: 'Press Start 2P', cursive; /* Police rétro */
+    font-size: 30px; /* Taille du texte */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #FDAFAF; /* Couleur du texte (or) */
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000; /* Ombre et effet lumineux */
+    animation: retroEffect 1s infinite alternate; /* Animation de l'effet rétro */
+  }
+  
+  .ticket-button {
+    background-color: #ff0090; /* Couleur vive (orange) */
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Effet de survol (hover) */
+  .ticket-button:hover {
+    background-color: #ff0090; /* Couleur plus claire au survol */
+    transform: translateY(-5px); /* Légère élévation pour l'effet visuel */
+  }
+  
+  /* Effet au clic (active) */
+  .ticket-button:active {
+    background-color: #ff0090; /* Couleur encore plus sombre au clic */
+    transform: translateY(0px); /* Reviens à la position normale */
+  }
+  
+  .mt-2{
+    text-align: center;
+    font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 20px;
+  }
+  
+
+  li{
+    text-align: center;
+    font-size: 20px;
+  }
+
+.mt-6{ 
+  text-decoration: none;
+}
+
+.card-title{
+  font-size: 20px;
+  text-align: center;
+}
+
+.card-text{
+  font-size: 20px;
+}
+
+.card img{
+  width: 500px;
+  height: 300px;
+  padding-left: 5px;
+}
+
+.button{
+text-align: center;
+}
+
+.card .card-title{
+  font-size: 30px;
+}
+
+.card .card-text{
+  font-size: 15px;
+}
+
+
+.ticket {
+  background-color: #f4a6d2; /* Couleur vive (orange) */
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Effet de survol (hover) */
+.ticket:hover {
+  background-color: #f0bfdc; /* Couleur plus claire au survol */
+  transform: translateY(-5px); /* Légère élévation pour l'effet visuel */
+}
+
+/* Effet au clic (active) */
+.ticket:active {
+  background-color: #f7dfec; /* Couleur encore plus sombre au clic */
+  transform: translateY(0px); /* Reviens à la position normale */
+}
+
+.card-group .card{
+  background-color: #efdaf0;
+}
+
+.section .abonnement{
+  background-color: #3e4651;
+}
+
+.tuiles .card{
+  background-color: #FDE0F6;
+}
+
+.flower{
+  background-image: url("../img/floflo.jpg");
+  margin-top: 15px ;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.flower .texteamour{
+  font-weight: bold;
+  text-align: center;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+#abonnement {
+  padding: 50px 0;
+  background-color: #ffffff; /* Fond sombre */
+  text-align: center;
+  color: white;
+}
+
+#abonnement p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000; /* Jaune pour le titre */
+  margin-bottom: 40px;
+}
+
+.abonnement .taille{
+  font-size: 15px;
+}
+
+.abonnement-grid {
+  display: grid;
+  color: #000000;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Grille flexible pour les cartes */
+  gap: 30px; /* Espace entre les cartes */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; /* Espacement horizontal */
+}
+
+.carde {
+  background-color: #f0b7dc; /* Fond plus clair que le fond de la section */
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Ombre douce */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carde:hover {
+  transform: translateY(-10px); /* Effet de survol pour l'élévation */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* Ombre renforcée au survol */
+}
+
+.abonnement-grid .carde-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #000000; /* Jaune pour le titre */
+  margin-bottom: 15px;
+}
+
+.abonnement-grid p {
+  font-size: 1rem;
+  color: #ffffff; /* Texte gris clair pour une bonne lisibilité */
+  margin-bottom: 20px;
+}
+
+.body .font-bold {
+  font-size: 2rem; /* Taille plus grande pour le prix */
+  font-weight: 700;
+  color: #000000; /* Jaune pour le prix */
+  margin-bottom: 25px;
+}
+
+.footer button.cta-button {
+  background-color: #f28fcf; /* Jaune pour le bouton */
+  color: #000000; /* Texte sombre pour un bon contraste */
+  padding: 12px 30px;
+  font-size: 1.25rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%; /* Le bouton prend toute la largeur de la carte */
+}
+
+.card-footer button.cta-button:hover {
+  background-color: #9b8d69; /* Jaune plus clair au survol */
+  transform: scale(1.05); /* Légère augmentation de la taille */
+}
+
+/* Pour les écrans mobiles */
+@media (max-width: 768px) {
+  #subscription h2 {
+      font-size: 2rem; /* Taille réduite du titre */
+  }
+
+  .subscriptions-grid {
+      grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+  }
+
+  .subscription-card {
+      padding: 20px;
+  }
+
+  .subscription-card h3 {
+      font-size: 1.5rem; /* Taille réduite pour les titres */
+  }
+
+  .subscription-card .font-bold {
+      font-size: 1.5rem; /* Prix plus petit */
+  }
+}
+
+/* tuiles */
+.tuiles .titre{
+  text-align: center;
+}
+
+.tuiles .img{
+text-align: center;
+}
+
+
+.tuiles .cta-button {
+  margin-left: 250px;
+  background-color: #f4a6d2; /* Couleur vive (orange) */
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Effet de survol (hover) */
+.tuiles .cta-button:hover {
+  background-color: #f0bfdc; /* Couleur plus claire au survol */
+  transform: translateY(-5px); /* Légère élévation pour l'effet visuel */
+}
+
+/* Effet au clic (active) */
+.tuiles .cta-button:active {
+  background-color: #f7dfec; /* Couleur encore plus sombre au clic */
+  transform: translateY(0px); /* Reviens à la position normale */
+}
+
+
+/* fin tuiles */
+
+.public-cible .cartep-body{
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  background-image: url(../img/flofloff.jpg);
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+.public-cible .title-title{
+  font-size: 30px;
+  font-weight: bold;
+}
+li {
+  list-style: none;
+}
+
+footer {
+  background-color: #1f2937; 
+  color: #f9fafb; 
+}
+
+footer h3 {
+  color: #facc15; 
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #f9fafb; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #facc15; 
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.75rem;
+}
+
+footer .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+footer .flex-1 {
+  flex: 1;
+  min-width: 200px; /*To ensure that on very small screens, each block doesn't become too narrow */
+}
+
+footer .space-x-6 >:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+footer .space-x-6 a:hover {
+  transform: scale(1.1);
+}
+
+/* Legal Info Section */
+footer .mt-12 {
+  margin-top: 3rem;
+}
+
+footer .text-center {
+  text-align: center;
+}
+
+footer .text-yellow-500 {
+  color: #fbbf24; /* Yellow-500 */
+}
+footer{
+  padding-bottom: 1cqi;
+}
+.logo{
+  width: 15%;
+}
+h3{
+  text-align: center;
+  align-items: center;
+}
+.bot{
+    padding-right: 15%;
+}
+.foot{
+  font-size: 1em;
+}
