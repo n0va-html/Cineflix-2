@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ee252e-8414-4316-9d01-d0a09a839dff" name="Changes" comment="add html/css for Horreur" />
+    <list default="true" id="25ee252e-8414-4316-9d01-d0a09a839dff" name="Changes" comment="add master to main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,8 +54,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JavaScript Debug.horreur.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,6 +95,7 @@
       <workItem from="1732616109060" duration="12396000" />
       <workItem from="1732634131824" duration="1876000" />
       <workItem from="1732694557530" duration="39240000" />
+      <workItem from="1732807164915" duration="1375000" />
     </task>
     <task id="LOCAL-00001" summary="add html/css/img for Horreur">
       <option name="closed" value="true" />
@@ -108,7 +113,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732807059797</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add master to main">
+      <option name="closed" value="true" />
+      <created>1732807209698</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732807209698</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add master to main">
+      <option name="closed" value="true" />
+      <created>1732807253819</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732807253819</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +150,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="add html/css/img for Horreur" />
     <MESSAGE value="add html/css for Horreur" />
-    <option name="LAST_COMMIT_MESSAGE" value="add html/css for Horreur" />
+    <MESSAGE value="add master to main" />
+    <option name="LAST_COMMIT_MESSAGE" value="add master to main" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
