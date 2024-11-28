@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cineflix - Page non trouvée">
+    <title>404 - Page Non Trouvée | Cineflix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mention.css">
+</head>
+
+<body class="bg-dark-gray text-white">
+<div class="container text-center py-20 chien">
+    <div class="error-container">
+        <h1 class="text-6xl font-bold text-yellow-400 mb-8">Erreur 404 </h1>
+        <p class="text-2xl mb-6">Il semble que la page que vous cherchez n'existe pas.</p>
+        <div class="error-image mb-8">
+            <img src="Images/popcorn.png" alt="Cineflix 404" class="error-icon" />
+        </div>
+        <p class="text-lg text-gray-300 mb-10">Cela pourrait être une erreur de lien ou la page a peut-être été déplacée.</p>
+        <a href="/" class="cta-button">Retour à l'Accueil</a>
+    </div>
+</div>
+<script>
+(function (window, undefined) {
+
+var c,
+cache,
+state,
+view,
+dispatch,
+defaults;
+
+c = cache = {};
+state = {};
+view = {};
+dispatch = {};
+defaults = {
+gifs: {
+fail: [
+'https://images.unsplash.com/gifs/fail/fail-1.gif',
+'https://images.unsplash.com/gifs/fail/fail-2.gif',
+'https://images.unsplash.com/gifs/fail/fail-3.gif',
+'https://images.unsplash.com/gifs/fail/fail-5.gif',
+'https://images.unsplash.com/gifs/fail/fail-6.gif',
+'https://images.unsplash.com/gifs/fail/fail-7.gif',
+'https://images.unsplash.com/gifs/fail/fail-8.gif',
+'https://images.unsplash.com/gifs/fail/fail-9.gif',
+'https://images.unsplash.com/gifs/fail/fail-11.gif',
+'https://images.unsplash.com/gifs/fail/fail-12.gif',
+'https://images.unsplash.com/gifs/fail/fail-13.gif',
+'https://images.unsplash.com/gifs/fail/fail-14.gif',
+'https://images.unsplash.com/gifs/fail/fail-15.gif',
+'https://images.unsplash.com/gifs/fail/fail-16.gif',
+'https://images.unsplash.com/gifs/fail/fail-17.gif',
+'https://images.unsplash.com/gifs/fail/fail-18.gif',
+'https://images.unsplash.com/gifs/fail/fail-20.gif',
+'https://images.unsplash.com/gifs/fail/fail-21.gif',
+'https://images.unsplash.com/gifs/fail/fail-22.gif',
+],
+weird: [
+'https://images.unsplash.com/gifs/weird/weird-1.gif',
+'https://images.unsplash.com/gifs/weird/weird-3.gif',
+'https://images.unsplash.com/gifs/weird/weird-4.gif',
+'https://images.unsplash.com/gifs/weird/weird-6.gif',
+'https://images.unsplash.com/gifs/weird/weird-8.gif',
+'https://images.unsplash.com/gifs/weird/weird-9.gif',
+'https://images.unsplash.com/gifs/weird/weird-10.gif',
+'https://images.unsplash.com/gifs/weird/weird-11.gif',
+'https://images.unsplash.com/gifs/weird/weird-12.gif',
+'https://images.unsplash.com/gifs/weird/weird-13.gif',
+'https://images.unsplash.com/gifs/weird/weird-14.gif',
+'https://images.unsplash.com/gifs/weird/weird-15.gif',
+'https://images.unsplash.com/gifs/weird/weird-16.gif',
+]
+}
+};
+
+cache.init = function () {
+this.body = document.body;
+};
+
+state.init = function () {
+this.gifs = defaults.gifs.fail;
+};
+
+state.getRandomGif = function () {
+return this.gifs[Math.floor(Math.random() * this.gifs.length)];
+};
+
+view.init = function () {
+c.body.style.backgroundImage = 'url(' + state.getRandomGif() + ')';
+};
+
+cache.init();
+state.init();
+view.init();
+
+})(window);
+</script>
+</body>
+
+</html>

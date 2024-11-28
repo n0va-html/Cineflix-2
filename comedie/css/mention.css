@@ -1,0 +1,93 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-dark-gray {
+    margin-top: 10%;
+    background-image: url("https://images.unsplash.com/gifs/fail/fail-1.gif");
+    background-size: 100%;
+
+}
+.chien{
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 10%;
+    margin-bottom: 10%;
+}
+.text-white {
+    color: #fff;
+}
+
+.text-yellow-400 {
+    color: white;
+}
+
+.text-gray-300 {
+    color: #d1d1d1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.error-container {
+    padding-top: 10px;
+
+}
+
+.error-container h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+}
+
+.error-container p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+
+}
+
+.error-image .error-icon {
+    width: 150px;
+    height: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color:white;
+    color: black;
+    padding: 12px 24px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5%;
+
+}
+
+.cta-button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .error-container h1 {
+        font-size: 4rem;
+    }
+
+    .error-container p {
+        font-size: 1.25rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+}
