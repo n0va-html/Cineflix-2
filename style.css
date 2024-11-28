@@ -21,46 +21,78 @@ a:hover {
   color: var(--primary-color);
 }
 
-header {
-  background: url('https://source.unsplash.com/1600x900/?cinema') no-repeat center center;
-  background-size: cover;
-  height: 100vh;
+.hero {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('https://files.oaiusercontent.com/file-5tpmvkNjCcsGSTfgdbC7YZ?se=2024-11-28T14%3A35%3A50Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D92b51385-8841-40c9-8e6f-ceeb7f02c671.webp&sig=2nZl6ki5MUV4BCqwfj6ZeKqzlvkSaCfgKp2AfLLDR9g%3D') no-repeat center center/cover; /* Image avec un dégradé sombre */
+  height: 100vh; /* Hauteur de l'écran */
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--light-color);
+  color: white;
+  background-size: cover; /* Garantit que l'image couvre toute la section */
+  background-position: center; /* Centrage de l'image */
+  z-index: 0;
+  padding-bottom: 10%;
+}
+@media (max-width: 680px){
+  .hero {
+    position: relative;
+    background: black;
+  }
+}
+
+.hero-content {
+  z-index: 1; /* Assure que le contenu est visible par-dessus l'image de fond */
+  max-width: 800px;
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Ajout d'un fond semi-transparent sombre pour améliorer la lisibilité du texte */
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Ombre douce autour du contenu */
 }
 
-header h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
+.hero h1 {
+  font-size: 3.5rem; /* Plus grand titre */
+  font-weight: bold;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); /* Ombre portée pour rendre le texte plus lisible */
+  margin-bottom: 15px;
 }
 
-header p {
-  font-size: 1.2rem;
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
 }
 
-header .btn {
-  margin: 10px;
-  padding: 15px 30px;
-  font-size: 1rem;
-  border-radius: 5px;
-  transition: all 0.3s;
-}
-
-header .btn-primary {
-  background-color: var(--primary-color);
-  color: #fff;
+.hero button {
+  padding: 12px 30px;
+  font-size: 1.25rem;
+  background-color: #fa5615; /* Jaune */
+  color: #1f2937; /* Texte sombre pour un bon contraste */
   border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-header .btn-primary:hover {
-  background-color: var(--accent-color);
+.hero button:hover {
+  background-color: #ffeeee; /* Jaune plus clair */
+  transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+/* Hero Section en Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 2.5rem; /* Taille de texte réduite sur mobile */
+  }
+  .hero p {
+      font-size: 1.125rem; /* Taille de texte réduite */
+  }
+  .hero button {
+      padding: 10px 20px;
+      font-size: 1.125rem;
+  }
 }
 
 .categories,
@@ -174,4 +206,24 @@ footer .text-yellow-500 {
       height: auto;
     }
   
+}
+.advantages .icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.advantages .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+.advantages .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(4, 4, 4, 0.2);
+}
+.testimonial {
+  font-style: italic;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: var(--accent-color);
 }

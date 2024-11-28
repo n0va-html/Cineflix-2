@@ -189,3 +189,16 @@ footer{
     margin-right: 7%;
   }
 }
+
+.advantages .icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.advantages .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+.advantages .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(4, 4, 4, 0.2);
+}

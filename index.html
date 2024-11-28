@@ -33,7 +33,7 @@
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="#">
-                <img src="image/logocineflix.png" alt="Logo Cineflix" class="logo me-2">
+                <img src="img/logocineflix.png" alt="Logo Cineflix" class="logo me-2">
             </a>
             <!-- Bouton de menu pour les écrans réduits -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,12 +52,12 @@
                         </a>
                         
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Romance</a></li>
+                            <li><a class="dropdown-item" href="action.html">Action</a></li>
+                            <li><a class="dropdown-item" href="html/romance.html">Romance</a></li>
                             <li><a class="dropdown-item" href="#">Science-Fiction</a></li>
-                            <li><a class="dropdown-item" href="#">Horreur</a></li>
+                            <li><a class="dropdown-item" href="html/horreur.html">Horreur</a></li>
                             <li><a class="dropdown-item" href="html/anime.html">Animé</a></li>
-                            <li><a class="dropdown-item" href="#">Comédies</a></li>
+                            <li><a class="dropdown-item" href="html/Comedie.html">Comédies</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -78,13 +78,15 @@
 
 <body>
     <!-- Hero Section -->
-    <header>
-        <h1>Bienvenue sur Cineflix</h1>
-        <p>Découvrez des milliers de films et séries, directement chez vous.</p>
-        <a href="#categories" class="btn btn-primary">Voir le catalogue</a>
-        <a href="#abo" class="btn btn-outline-light">S'abonner</a>
-        <a id="categories"href=""></a>
-    </header>
+    <section id="#com" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue sur Cinéflix</h1>
+            <p>Découvrez notre sélection de films</p>
+            <a href="#abo">
+            <button>S'abonner</button>
+            </a>
+        </div>
+    </section>
 
     <!-- Section Catégories et Avantages -->
     <section class="categories"  >
@@ -93,17 +95,17 @@
             <div class="row">
                 <div class="col-md-3 mb-4 cat">
                     <div class="category-tile">
-                        <h5><a href="action.html" style="color: inherit;">Action</a></h5>
+                        <h5><a href="html/action.html" style="color: inherit;">Action</a></h5>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4 cat">
                     <div class="category-tile">
-                        <h5><a href="comedy.html" style="color: inherit;">Comédie</a></h5>
+                        <h5><a href="html/Comedie.html" style="color: inherit;">Comédie</a></h5>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4 cat">
                     <div class="category-tile">
-                        <h5><a href="romance.html" style="color: inherit;">Romance</a></h5>
+                        <h5><a href="html/romance.html" style="color: inherit;">Romance</a></h5>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4 cat" >
@@ -113,7 +115,7 @@
                 </div>
                 <div class="col-md-3 mb-4 hor cat">
                     <div class="category-tile ">
-                        <h5><a href="" style="color: inherit;">Horreur</a></h5>
+                        <h5><a href="html/horreur.html" style="color: inherit;">Horreur</a></h5>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4 ani">
@@ -131,16 +133,16 @@
             <h2 class="text-center mb-4">Films en Vedette</h2>
             <div class="row">
                 <div class="col-md-3">
-                    <img src="image/borderlands.jpg" class="img-fluid" alt="Action">
+                    <img src="img/borderlands.jpg" class="img-fluid" alt="Action">
                 </div>
                 <div class="col-md-3">
-                    <img src="image/icilabas.jpg" class="img-fluid" alt="Comédie">
+                    <img src="img/icilabas.jpg" class="img-fluid" alt="Comédie">
                 </div>
                 <div class="col-md-3">
-                    <img src="image/challengers.jpg" class="img-fluid" alt="Romance">
+                    <img src="img/challengers.jpg" class="img-fluid" alt="Romance">
                 </div>
                 <div class="col-md-3">
-                    <img src="image/gardiengalaxie.jpg" class="img-fluid" alt="Science-Fiction">
+                    <img src="img/gardiengalaxie.jpg" class="img-fluid" alt="Science-Fiction">
                 </div>
             </div>
             <a id="abo" href=""></a>
@@ -206,7 +208,76 @@
         </div>
     </div>
 </section>
+<!-- Section Avantages des Abonnements -->
+<section class="advantages py-5">
+    <div class="container text-center">
+        <h2 class="mb-5">Pourquoi Choisir Nos Abonnements ?</h2>
+        <div class="row justify-content-center">
+            <!-- Avantage 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="bi bi-film fs-1 text-primary"></i>
+                        </div>
+                        <h5 class="card-title">Accès Illimité</h5>
+                        <p class="card-text">Explorez un catalogue varié de films et séries sans aucune restriction.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Avantage 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="bi bi-tv fs-1 text-success"></i>
+                        </div>
+                        <h5 class="card-title">Qualité HD & 4K</h5>
+                        <p class="card-text">Plongez dans une expérience immersive avec une qualité d’image exceptionnelle.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Avantage 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="bi bi-watch fs-1 text-warning"></i>
+                        </div>
+                        <h5 class="card-title">Visionnage Hors Ligne</h5>
+                        <p class="card-text">Téléchargez vos contenus préférés pour les regarder où que vous soyez.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section class="testimonials py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Avis de Nos Clients</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <blockquote class="testimonial">
+                    "Cineflix offre une excellente qualité de contenu, je ne pourrais plus m'en passer !"
+                    <footer class="testimonial-author">- Sarah M.</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="testimonial">
+                    "Des films récents et une plateforme facile à utiliser, je recommande !"
+                    <footer class="testimonial-author">- Lucas R.</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="testimonial">
+                    "Une qualité 4K incroyable et des abonnements abordables. Bravo Cineflix !"
+                    <footer class="testimonial-author">- Emma T.</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- Ajout des icônes Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -220,11 +291,12 @@
                 <div class="flex-1">
                     <h3 class="text-xl font-semibold text-yellow-400 mb-4">Pages Pricipales</h3>
                     <ul>
-                        <li><a href="#" class="hover:text-yellow-400">Action</a></li>
-                        <li><a href="#com" class="hover:text-yellow-400">Comedies</a></li>
-                        <li><a href="#" class="hover:text-yellow-400">Romance</a></li>
-                        <li><a href="#" class="hover:text-yellow-400">Science-Fiction</a></li>
-                        <li><a href="#" class="hover:text-yellow-400">Horreur</a></li>
+                        <li><a class="hover:text-yellow-400" href="action.html">Action</a></li>
+                    <li><a class="hover:text-yellow-400" href="romance.html">Romance</a></li>
+                    <li><a class="hover:text-yellow-400" href="sf.html">Science-Fiction</a></li>
+                    <li><a class="hover:text-yellow-400" href="horreur.html">Horreur</a></li>
+                    <li><a class="hover:text-yellow-400" href="pagenouveaute.html">Animé</a></li>
+                    <li><a class="hover:text-yellow-400" href="Comedie.html">Comédies</a></li>
                     </ul>
                 </div>
                 <!-- Contact -->
@@ -240,10 +312,10 @@
                     <h3 class="text-xl font-semibold text-yellow-400 mb-4">Suivez-nous</h3>
                     <div class="flex space-x-6">
                         <a href="https://x.com/NeedForSchool1" class="hover:text-yellow-400" target="_blank">
-                            <img src="image/twitter.png" alt="Twitter" class="w-6 h-6"/>
+                            <img src="img/twitter.png" alt="Twitter" class="w-6 h-6"/>
                         </a>
                         <a href="https://www.instagram.com/need_forschool/" class="hover:text-yellow-400" target="_blank">
-                            <img src="image/instagram.png" alt="Instagram" class="w-6 h-6"/>
+                            <img src="img/instagram.png" alt="Instagram" class="w-6 h-6"/>
                         </a>
                     </div>
                 </div>
