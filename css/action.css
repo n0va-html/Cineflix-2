@@ -1,0 +1,154 @@
+body{
+    background-color: #393939;
+    color:white;
+}
+
+.numerotrois{
+    background-color: #b00000;
+}
+
+
+
+.numerodeux{
+    padding-top: 50px;
+}
+
+.numeroquatre .col{
+    text-align: left;
+}
+
+.paragraphe{
+    text-align: left;
+    padding-top: 50px;
+
+}
+
+.paragraphes{
+    text-align: left;
+}
+
+ .numerocinq{
+background-color: #b00000;
+}
+
+.numerocinq img{
+    padding-top: 60px;
+}
+
+.intro {
+    background-image: url("../img/intro.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+
+}
+
+.intro h1 {
+    color: #b00000;
+    margin-bottom: 100px;
+    padding-top: 20px;
+}
+
+
+
+
+.imageun{
+    width: 100%;
+}
+
+p {
+    font-size: 25px;
+}
+
+#picto,#textun{
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.numerocinq .imageun:hover{
+    opacity: 80%;
+}
+
+.numerosix,.row{
+    justify-content: center;
+
+
+}
+
+.card-header {
+    font-size: 20px;
+}
+
+/* General Footer Styles */
+footer {
+    background-color: #1f2937; /* Neutral-900 */
+    color: #f9fafb; /* Yellow-100 */
+}
+
+footer h3 {
+    color: #b00000; /* Yellow-400 */
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #f9fafb; /* Yellow-100 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #b00000; /* Yellow-400 */
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.75rem;
+}
+/* Footer Flex layout: Align elements horizontally */
+footer .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+footer .flex-1 {
+    flex: 1;
+    min-width: 200px; /* To ensure that on very small screens, each block doesn't become too narrow */
+}
+
+footer .space-x-6 > *:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+footer .space-x-6 a:hover {
+    transform: scale(1.1);
+}
+
+/* Legal Info Section */
+footer .mt-12 {
+    margin-top: 3rem;
+}
+
+footer .text-center {
+    text-align: center;
+}
+
+footer .text-yellow-500 {
+    color: #fbbf24; /* Yellow-500 */
+}
+footer {
+    padding-bottom: 1%;
+}
