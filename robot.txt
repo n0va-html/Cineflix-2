@@ -1,0 +1,30 @@
+# robots.txt for Cineflix
+# Author: Mustapha Benakcha
+# Updated: 2024
+
+User-agent: *
+# Allow search engines to index the main pages
+Allow: /
+Allow: /categories
+Allow: /movies
+Allow: /trailers
+Allow: /contact
+
+# Disallow sensitive or unnecessary areas
+Disallow: /admin
+Disallow: /login
+Disallow: /register
+Disallow: /private
+Disallow: /temp
+Disallow: /cgi-bin/
+
+# Block access to specific file types (optional)
+Disallow: /*.php$
+Disallow: /*.json$
+Disallow: /*.env$
+
+# Crawl-delay (optional, adjust based on server capacity)
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://www.cineflix.com/sitemap.xml
