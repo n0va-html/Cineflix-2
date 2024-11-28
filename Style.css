@@ -94,91 +94,28 @@ a{
     }
 }
 
-
-/* Movies Grid */
-.movies-grid {
-    padding: 40px 0;
-    text-align: center;
+.explore-button{
+    margin-top: 5%;
 
 }
-
-.movies-grid h2 {
-    font-size: 2rem;
-    margin-bottom: 32px;
+/* Modale pour bande-annonce */
+#trailer-modal.hidden {
+    display: none;
 }
 
-.movies {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 24px;
-}
-
-.movie-card {
+#trailer-modal .video-container {
     position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
     overflow: hidden;
-    border-radius: 16px;
-    background-color: #1f2937; /* Neutral-900 */
-    cursor: pointer;
 }
 
-.movie-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.movie-card:hover img {
-    transform: scale(1.1);
-}
-
-.movie-overlay {
+#trailer-modal .video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5), transparent);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.movie-card:hover .movie-overlay {
-    opacity: 1;
-}
-
-.movie-details {
-    position: absolute;
-    bottom: 16px;
-    left: 16px;
-    right: 16px;
-    color: #facc15;
-}
-
-.movie-details h3 {
-    margin: 0;
-    font-size: 1.25rem;
-}
-
-.movie-details .info {
-    margin: 8px 0;
-    font-size: 0.875rem;
-}
-
-.movie-details button {
     width: 100%;
-    padding: 8px 16px;
-    background-color: #facc15;
-    border: none;
-    border-radius: 8px;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.movie-details button:hover {
-    background-color: #eab308;
+    height: 100%;
 }
 
 /* Categories Section */
@@ -666,10 +603,11 @@ a{
     }
 }
 .public-cible-section {
-    background-color: #1f1f1f; /* Gris foncé pour le fond */
     color: #fff; /* Texte blanc */
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 300px;
+    padding-bottom: 240px;
+
+
 }
 
 .public-cible-section h2 {
@@ -737,74 +675,76 @@ a{
 }
 
 
-/* General Footer Styles */
-footer {
-    background-color: #1f2937; /* Neutral-900 */
-    color: #f9fafb; /* Yellow-100 */
-}
+    /* General Footer Styles */
+    footer {
+        background-color: #1f2937; /* Neutral-900 */
+        color: #f9fafb; /* Yellow-100 */
+        margin-top: 10%;
+        padding-top: 2%;
+    }
 
-footer h3 {
-    color: #facc15; /* Yellow-400 */
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
+    footer h3 {
+        color: #facc15; /* Yellow-400 */
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
 
-footer a {
-    color: #f9fafb; /* Yellow-100 */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+    footer a {
+        color: #f9fafb; /* Yellow-100 */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
 
-footer a:hover {
-    color: #facc15; /* Yellow-400 */
-}
+    footer a:hover {
+        color: #facc15; /* Yellow-400 */
+    }
 
-footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
+    footer ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
 
-footer ul li {
-    margin-bottom: 0.75rem;
-}
-/* Footer Flex layout: Align elements horizontally */
-footer .flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1.5rem;
-}
+    footer ul li {
+        margin-bottom: 0.75rem;
+    }
+    /* Footer Flex layout: Align elements horizontally */
+    footer .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
 
-footer .flex-1 {
-    flex: 1;
-    min-width: 200px; /* To ensure that on very small screens, each block doesn't become too narrow */
-}
+    footer .flex-1 {
+        flex: 1;
+        min-width: 200px; /* To ensure that on very small screens, each block doesn't become too narrow */
+    }
 
-footer .space-x-6 > *:not(:last-child) {
-    margin-right: 1.5rem;
-}
+    footer .space-x-6 > *:not(:last-child) {
+        margin-right: 1.5rem;
+    }
 
-footer .space-x-6 a:hover {
-    transform: scale(1.1);
-}
+    footer .space-x-6 a:hover {
+        transform: scale(1.1);
+    }
 
-/* Legal Info Section */
-footer .mt-12 {
-    margin-top: 3rem;
-}
+    /* Legal Info Section */
+    footer .mt-12 {
+        margin-top: 3rem;
+    }
 
-footer .text-center {
-    text-align: center;
-}
+    footer .text-center {
+        text-align: center;
+    }
 
-footer .text-yellow-500 {
-    color: #fbbf24; /* Yellow-500 */
-}
-footer{
-    padding-bottom: 1%;
-}
-.logo{
-    width: 15%;
-}
+    footer .text-yellow-500 {
+        color: #fbbf24; /* Yellow-500 */
+    }
+    footer{
+        padding-bottom: 1%;
+    }
+    .logo{
+        width: 15%;
+    }
