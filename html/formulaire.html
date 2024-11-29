@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../Images/logo_cineflix.png" type="image/png">
+    <link rel="stylesheet" href="../css/formulaire.css">
+    <title>Formulaire</title>
+</head>
+<body>
+<section id="subscription-form" class="container py-16 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white rounded-lg shadow-lg">
+    <h2 class="text-4xl font-extrabold text-yellow-400 text-center mb-12">Rejoignez Cineflix</h2>
+    <form action="success.html" method="POST" class="max-w-xl mx-auto bg-gray-800 p-10 rounded-xl shadow-md">
+        <!-- Informations personnelles -->
+        <div class="mb-8">
+            <label for="name" class="block text-yellow-400 font-medium mb-2">Nom complet</label>
+            <input type="text" id="name" name="name" required placeholder="Votre nom complet"
+                   class="w-full p-4 bg-gray-700 text-white rounded-md border-none focus:outline-none focus:ring-4 focus:ring-yellow-400">
+        </div>
+        <div class="mb-8">
+            <label for="email" class="block text-yellow-400 font-medium mb-2">Adresse Email</label>
+            <input type="email" id="email" name="email" required placeholder="email@example.com"
+                   class="w-full p-4 bg-gray-700 text-white rounded-md border-none focus:outline-none focus:ring-4 focus:ring-yellow-400">
+        </div>
+
+        <!-- Coordonnées bancaires -->
+        <div class="mb-8">
+            <label for="card-number" class="block text-yellow-400 font-medium mb-2">Numéro de carte bancaire</label>
+            <input type="text" id="card-number" name="card-number" required
+                   placeholder="1234 5678 9101 1121"
+                   class="w-full p-4 bg-gray-700 text-white rounded-md border-none focus:outline-none focus:ring-4 focus:ring-yellow-400">
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-8">
+            <div>
+                <label for="expiry-date" class="block text-yellow-400 font-medium mb-2">Date d’expiration</label>
+                <input required type="text" id="expiry-date" name="expiry-date"
+                       placeholder="MM/AA"
+                       class="w-full p-4 bg-gray-700 text-white rounded-md border-none focus:outline-none focus:ring-4 focus:ring-yellow-400">
+            </div>
+            <div>
+                <label for="cvv" class="block text-yellow-400 font-medium mb-2">CVV</label>
+                <input type="text" id="cvv" name="cvv" required
+                       placeholder="123"
+                       class="w-full p-4 bg-gray-700 text-white rounded-md border-none focus:outline-none focus:ring-4 focus:ring-yellow-400">
+            </div>
+        </div>
+
+        <!-- Bouton soumettre -->
+        <a href="success.html">
+        <button type="submit"
+                class="w-full py-4 bg-yellow-400 text-black font-bold rounded-md text-lg hover:bg-yellow-500 transition">
+            S’abonner maintenant
+        </a>
+        </button>
+    </form>
+</section>
+
+
+</body>
+</html>

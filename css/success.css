@@ -1,0 +1,91 @@
+body,html{
+    padding: 0;
+    margin: 0;
+}
+
+/* Style global pour la page */
+#success-page {
+    background: linear-gradient(135deg, #1e293b, #111827);
+    padding: 5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Conteneur principal */
+.success-container {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Titre principal */
+.success-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #1f2937; /* Texte en noir-gris foncé */
+}
+
+/* Sous-titre */
+.success-container p {
+    font-size: 1.25rem;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    color: #374151; /* Noir-gris moyen */
+}
+
+/* Bouton de retour */
+.success-container button {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Effet survol du bouton */
+.success-container button:hover {
+    background-color: #eab308;
+    transform: scale(1.05);
+}
+
+/* Illustration */
+.success-image {
+    max-width: 100%;
+    margin: 0 auto 2rem;
+    border-radius: 1rem;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .success-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .success-container h1 {
+        font-size: 2.25rem;
+    }
+
+    .success-container p {
+        font-size: 1rem;
+    }
+
+    .success-container button {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+}

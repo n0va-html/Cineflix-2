@@ -1,0 +1,112 @@
+body,html{
+    padding:0;
+    margin: 0;
+}
+
+
+/* Style global pour la section */
+#subscription-form {
+    background: linear-gradient(135deg, #1e293b, #111827);;
+    padding: 4rem 1rem 13rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Titre principal */
+#subscription-form h2 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+/* Formulaire */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #1f2937;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Champ de saisie */
+form input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    margin-bottom: 1.5rem;
+    background: #374151;
+    border: 1px solid #4b5563;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus sur les champs */
+form input:focus {
+    border-color: white;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+/* Étiquettes */
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Conteneur des coordonnées bancaires */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* Bouton d’abonnement */
+form button {
+    display: block;
+    width: 100%;
+    padding: 0.875rem;
+    background: white;
+    color: #111827;
+    font-weight: bold;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+/* Survol du bouton */
+form button:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* Responsivité */
+@media (max-width: 640px) {
+    #subscription-form {
+        padding: 2rem 1rem;
+    }
+
+    form {
+        padding-right: 4rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+a{
+    text-decoration: none;
+    color: black;
+}

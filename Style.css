@@ -26,73 +26,73 @@ a{
 
 }
 /* Hero Section */
-.hero {
-    position: relative;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('https://image.freepik.com/vecteurs-libre/conception-affiche-premiere-cinema-film-fond-vecteur-cinema-ecran-cinema-ecran-blanc_165143-1170.jpg') no-repeat center center/cover; /* Image avec un dégradé sombre */
-    height: 100vh; /* Hauteur de l'écran */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    background-size: cover; /* Garantit que l'image couvre toute la section */
-    background-position: center; /* Centrage de l'image */
-    z-index: 0;
-    padding-bottom: 10%;
-}
+    .hero {
+        position: relative;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('https://image.freepik.com/vecteurs-libre/conception-affiche-premiere-cinema-film-fond-vecteur-cinema-ecran-cinema-ecran-blanc_165143-1170.jpg') no-repeat center center/cover; /* Image avec un dégradé sombre */
+        height: 100vh; /* Hauteur de l'écran */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        background-size: cover; /* Garantit que l'image couvre toute la section */
+        background-position: center; /* Centrage de l'image */
+        z-index: 0;
+        padding-bottom: 10%;
+    }
 
-.hero-content {
-    z-index: 1; /* Assure que le contenu est visible par-dessus l'image de fond */
-    max-width: 800px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Ajout d'un fond semi-transparent sombre pour améliorer la lisibilité du texte */
-    border-radius: 10px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Ombre douce autour du contenu */
-}
+    .hero-content {
+        z-index: 1; /* Assure que le contenu est visible par-dessus l'image de fond */
+        max-width: 800px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.6); /* Ajout d'un fond semi-transparent sombre pour améliorer la lisibilité du texte */
+        border-radius: 10px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Ombre douce autour du contenu */
+    }
 
-.hero h1 {
-    font-size: 3.5rem; /* Plus grand titre */
-    font-weight: bold;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); /* Ombre portée pour rendre le texte plus lisible */
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
-    margin-bottom: 30px;
-}
-
-.hero button {
-    padding: 12px 30px;
-    font-size: 1.25rem;
-    background-color: #facc15; /* Jaune */
-    color: #1f2937; /* Texte sombre pour un bon contraste */
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.hero button:hover {
-    background-color: #fbbf24; /* Jaune plus clair */
-    transform: scale(1.1); /* Effet de zoom au survol */
-}
-
-/* Hero Section en Responsive */
-@media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.5rem; /* Taille de texte réduite sur mobile */
+        font-size: 3.5rem; /* Plus grand titre */
+        font-weight: bold;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); /* Ombre portée pour rendre le texte plus lisible */
+        margin-bottom: 15px;
     }
+
     .hero p {
-        font-size: 1.125rem; /* Taille de texte réduite */
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+        margin-bottom: 30px;
     }
+
     .hero button {
-        padding: 10px 20px;
-        font-size: 1.125rem;
+        padding: 12px 30px;
+        font-size: 1.25rem;
+        background-color: #facc15; /* Jaune */
+        color: #1f2937; /* Texte sombre pour un bon contraste */
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease;
     }
-}
+
+    .hero button:hover {
+        background-color: #fbbf24; /* Jaune plus clair */
+        transform: scale(1.1); /* Effet de zoom au survol */
+    }
+
+    /* Hero Section en Responsive */
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2.5rem; /* Taille de texte réduite sur mobile */
+        }
+        .hero p {
+            font-size: 1.125rem; /* Taille de texte réduite */
+        }
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1.125rem;
+        }
+    }
 
 .explore-button{
     margin-top: 5%;
