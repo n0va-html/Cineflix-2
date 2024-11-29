@@ -110,18 +110,6 @@
 #categories{
     background-color: #000040;
 }
-.romance{
-    background-image: url("../img/titanic.jpg");
-    background-position: top;
-}
-.sciences{
-    background-image: url("../img/dune.jpg");
-    background-position: center;
-}
-.action{
-    background-image: url("../img/avengers.jpg");
-    background-position: center;
-}
 #supplement{
     background-image: url("../img/manoir.jpg");
     background-size: 100%;
@@ -138,7 +126,7 @@
     align-items: center;
     margin: 5vmin;
     overflow: hidden;
-    transform: skew(5deg);
+    transform: skew(-5deg);
 
 
     .card {
@@ -148,7 +136,7 @@
         position: relative;
         .card__head {
             color: black;
-            background: rgba(255, 30, 173, 0.75);
+            background: rgb(255, 255, 255);
             padding: 0.5em;
             transform: rotate(-90deg);
             transform-origin: 0% 0%;
